@@ -81,7 +81,7 @@ ollama pull mistral:7b
 ## Execução do Pipeline
 
 Corre os módulos pela seguinte ordem:
-
+```
 Fase 1 — Reconstrução de trajectórias
 python src/stitcher.py --input data/events.csv --output output/journeys.csv
 Fase 2 — Pipeline analítico
@@ -90,7 +90,7 @@ Fase 3 — LLM Insight Engine (requer Ollama a correr)
 python src/insights.py --input output/metrics.json --output output/insights.json
 Fase 4 — Report semanal
 python src/report.py --input output/insights.json --output output/weekly_report.md
-
+```
 ---
 
 ## Avaliação

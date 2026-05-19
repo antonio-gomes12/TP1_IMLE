@@ -10,7 +10,7 @@ Pipeline de análise de dados de retalho que transforma eventos brutos de visão
 ## Descrição
 
 O sistema de visão computacional de uma loja monitoriza **23 zonas** e produz eventos `entry`, `exit` e `linger` para cada pessoa detectada, sem identificador de pessoa. O pipeline reconstrói trajectórias individuais, calcula métricas de comportamento e gera um briefing semanal automático em linguagem natural.
-
+```
 events.csv → stitcher.py → journeys.csv
 ↓
 analytics.py → metrics.json
@@ -18,7 +18,7 @@ analytics.py → metrics.json
 insights.py → insights.json
 ↓
 report.py → weekly_report.md
-
+```
 ---
 
 ## Estrutura do Projecto

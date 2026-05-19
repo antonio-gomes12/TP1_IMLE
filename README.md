@@ -23,9 +23,12 @@ report.py → weekly_report.md
 
 ## Estrutura do Projecto
 
+```
 TP1-IMLE/
 ├── data/
-│   └──  events.csv                  # Dataset original (250.015 eventos, 7 dias)
+│   ├── events.csv                  # Dataset original (250.015 eventos, 7 dias)
+│   ├── events_validation.csv       # Dataset com anomalias injectadas
+│   └── anomalies_manifest.json     # Registo das anomalias injectadas
 ├── output/
 │   ├── journeys.csv                # Trajectórias reconstruídas
 │   ├── metrics.json                # Métricas pré-calculadas
@@ -45,6 +48,7 @@ TP1-IMLE/
 ├── inject_anomalies.py             # Injecção de anomalias para teste
 ├── zones.json                      # Grafo de adjacência das 23 zonas
 └── requirements.txt
+```
 
 ---
 
